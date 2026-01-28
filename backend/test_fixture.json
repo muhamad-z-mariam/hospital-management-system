@@ -1,0 +1,526 @@
+[
+  {
+    "model": "api.user",
+    "pk": 2001,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$uZvFc6m3$qWGm5bAYjYkl7/+FqL1vxXH9L9P8pMz3w8z2qGq1Q5Q=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "test_admin_user",
+      "first_name": "Test",
+      "last_name": "Admin",
+      "email": "test.admin@hospital.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2025-01-01T08:00:00Z",
+      "role": "admin",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "api.user",
+    "pk": 2002,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$uZvFc6m3$qWGm5bAYjYkl7/+FqL1vxXH9L9P8pMz3w8z2qGq1Q5Q=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "dr_john_smith",
+      "first_name": "John",
+      "last_name": "Smith",
+      "email": "john.smith@hospital.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-01-01T08:00:00Z",
+      "role": "doctor",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "api.user",
+    "pk": 2003,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$uZvFc6m3$qWGm5bAYjYkl7/+FqL1vxXH9L9P8pMz3w8z2qGq1Q5Q=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "nurse_jane_doe",
+      "first_name": "Jane",
+      "last_name": "Doe",
+      "email": "jane.doe@hospital.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-01-01T08:00:00Z",
+      "role": "nurse",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "api.user",
+    "pk": 2004,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$uZvFc6m3$qWGm5bAYjYkl7/+FqL1vxXH9L9P8pMz3w8z2qGq1Q5Q=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "pharma_mike_j",
+      "first_name": "Mike",
+      "last_name": "Johnson",
+      "email": "mike.johnson@hospital.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2025-01-01T08:00:00Z",
+      "role": "pharmacy_staff",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "api.doctor",
+    "pk": 2001,
+    "fields": {
+      "user": 2002,
+      "specialty": "Cardiology"
+    }
+  },
+  {
+    "model": "api.nurse",
+    "pk": 2001,
+    "fields": {
+      "user": 2003,
+      "department": "Emergency"
+    }
+  },
+  {
+    "model": "api.pharmacystaff",
+    "pk": 2001,
+    "fields": {
+      "user": 2004,
+      "license_number": "PH-TEST-123456",
+      "shift": "morning"
+    }
+  },
+  {
+    "model": "api.patient",
+    "pk": 2001,
+    "fields": {
+      "name": "Alice Thompson",
+      "age": 65,
+      "gender": "female",
+      "contact": "+44-7700-900111",
+      "nhs_number": "2001234567",
+      "cholesterol": 220.5,
+      "eosinophil_count": 0.3,
+      "creatinine_enzymatic_method": 1.2,
+      "platelet": 250.0,
+      "total_bile_acid": 10.5,
+      "mean_corpuscular_volume": 90.0,
+      "indirect_bilirubin": 0.5,
+      "creatine_kinase_isoenzyme_to_creatine_kinase": 0.03,
+      "uric_acid": 5.5,
+      "std_dev_red_blood_cell_distribution_width": 13.5,
+      "alkaline_phosphatase": 70.0,
+      "neutrophil_ratio": 60.0,
+      "high_density_lipoprotein_cholesterol": 45.0,
+      "high_sensitivity_troponin": 0.02,
+      "chloride": 102.0,
+      "glomerular_filtration_rate": 75.0,
+      "creatine_kinase_isoenzyme": 25.0,
+      "creatine_kinase": 120.0,
+      "prothrombin_activity": 95.0,
+      "brain_natriuretic_peptide": 100.0,
+      "triglyceride": 150.0,
+      "mean_hemoglobin_concentration": 34.0,
+      "lymphocyte_count": 2.0,
+      "red_blood_cell": 4.5,
+      "glutamic_oxaloacetic_transaminase": 30.0,
+      "nucleotidase": 5.0,
+      "left_ventricular_end_diastolic_diameter_LV": 50.0,
+      "d_dimer": 0.4,
+      "albumin": 4.0,
+      "thrombin_time": 16.0,
+      "num_lab_procedures": 15,
+      "num_medications": 5,
+      "time_in_hospital": 3,
+      "number_inpatient": 2,
+      "num_procedures": 1,
+      "discharge_disposition_id": 1,
+      "number_diagnoses": 3,
+      "admission_type_id": 1,
+      "admission_source_id": 7,
+      "number_outpatient": 1,
+      "number_emergency": 0,
+      "gender_Male": false,
+      "race_Caucasian": true,
+      "age_70_80": false,
+      "age_60_70": true,
+      "age_80_90": false,
+      "age_50_60": false,
+      "age_40_50": false,
+      "age_30_40": false,
+      "age_90_100": false,
+      "insulin_Steady": true,
+      "insulin_No": false,
+      "insulin_Up": false,
+      "change_No": false,
+      "metformin_Steady": true,
+      "metformin_No": false,
+      "diabetesMed_Yes": true,
+      "glipizide_No": false,
+      "glipizide_Steady": true,
+      "glyburide_No": true,
+      "glyburide_Steady": false,
+      "pioglitazone_No": true,
+      "pioglitazone_Steady": false,
+      "rosiglitazone_No": true,
+      "rosiglitazone_Steady": false,
+      "glimepiride_No": true,
+      "glimepiride_Steady": false,
+      "A1Cresult_gt8": false,
+      "A1Cresult_Norm": true,
+      "max_glu_serum_Norm": true,
+      "diag_1_428": true,
+      "diag_1_414": false,
+      "diag_1_410": false,
+      "diag_1_486": false,
+      "diag_1_786": false,
+      "diag_1_491": false,
+      "diag_1_427": false,
+      "diag_1_276": false,
+      "diag_1_584": false,
+      "diag_2_276": false,
+      "diag_2_428": false,
+      "diag_2_427": false,
+      "diag_2_496": false,
+      "diag_2_599": false,
+      "diag_2_403": false,
+      "diag_2_250": true,
+      "diag_2_707": false,
+      "diag_2_411": false,
+      "diag_2_585": false,
+      "diag_2_425": false,
+      "diag_3_250": true,
+      "diag_3_276": false,
+      "diag_3_428": false,
+      "diag_3_401": true,
+      "diag_3_427": false,
+      "diag_3_414": false,
+      "diag_3_496": false,
+      "diag_3_585": false,
+      "diag_3_403": false,
+      "diag_3_599": false,
+      "insurance_status": true,
+      "handicapped": false,
+      "created_at": "2025-01-01T08:00:00Z",
+      "updated_at": "2025-01-15T10:30:00Z"
+    }
+  },
+  {
+    "model": "api.patient",
+    "pk": 2002,
+    "fields": {
+      "name": "Bob Williams",
+      "age": 45,
+      "gender": "male",
+      "contact": "+44-7700-900222",
+      "nhs_number": "2000987654",
+      "cholesterol": 180.0,
+      "insurance_status": false,
+      "handicapped": true,
+      "created_at": "2025-01-02T09:00:00Z",
+      "updated_at": "2025-01-20T11:00:00Z"
+    }
+  },
+  {
+    "model": "api.room",
+    "pk": 2001,
+    "fields": {
+      "room_number": "TEST-101",
+      "room_type": "General",
+      "bed_capacity": 2,
+      "occupied_beds": 1,
+      "is_available": true
+    }
+  },
+  {
+    "model": "api.room",
+    "pk": 2002,
+    "fields": {
+      "room_number": "TEST-201",
+      "room_type": "ICU",
+      "bed_capacity": 1,
+      "occupied_beds": 0,
+      "is_available": true
+    }
+  },
+  {
+    "model": "api.procedure",
+    "pk": 2001,
+    "fields": {
+      "name": "Test Cardiac Catheterization",
+      "description": "Invasive procedure to examine heart function",
+      "cost": "2500.00",
+      "procedure_type": "surgical"
+    }
+  },
+  {
+    "model": "api.procedure",
+    "pk": 2002,
+    "fields": {
+      "name": "Test Blood Work",
+      "description": "Standard blood work analysis",
+      "cost": "50.00",
+      "procedure_type": "non_surgical"
+    }
+  },
+  {
+    "model": "api.appointment",
+    "pk": 2001,
+    "fields": {
+      "patient": 2001,
+      "doctor": 2001,
+      "appointment_date": "2025-01-10T14:00:00Z",
+      "reason": "Chest pain follow-up",
+      "status": "completed",
+      "notes": "Patient stable, medication adjusted",
+      "completed_at": "2025-01-10T15:00:00Z",
+      "created_at": "2025-01-05T10:00:00Z",
+      "updated_at": "2025-01-10T15:00:00Z"
+    }
+  },
+  {
+    "model": "api.appointment",
+    "pk": 2002,
+    "fields": {
+      "patient": 2002,
+      "doctor": 2001,
+      "appointment_date": "2025-01-25T10:00:00Z",
+      "reason": "Routine checkup",
+      "status": "scheduled",
+      "notes": "",
+      "completed_at": null,
+      "created_at": "2025-01-20T09:00:00Z",
+      "updated_at": "2025-01-20T09:00:00Z"
+    }
+  },
+  {
+    "model": "api.admission",
+    "pk": 2001,
+    "fields": {
+      "patient": 2001,
+      "doctor": 2001,
+      "nurse": 2001,
+      "room": 2001,
+      "admission_date": "2025-01-11T08:00:00Z",
+      "discharge_date": "2025-01-14T16:00:00Z",
+      "status": "discharged",
+      "requires_inpatient": true,
+      "doctor_notes": "Patient recovered well from cardiac procedure"
+    }
+  },
+  {
+    "model": "api.admission",
+    "pk": 2002,
+    "fields": {
+      "patient": 2002,
+      "doctor": 2001,
+      "nurse": 2001,
+      "room": 2001,
+      "admission_date": "2025-01-20T10:00:00Z",
+      "discharge_date": null,
+      "status": "admitted",
+      "requires_inpatient": true,
+      "doctor_notes": "Observation for fracture recovery"
+    }
+  },
+  {
+    "model": "api.payment",
+    "pk": 2001,
+    "fields": {
+      "patient": 2001,
+      "payment_type": "inpatient",
+      "admission": 2001,
+      "procedure_cost": "2550.00",
+      "daily_care_cost": "90.00",
+      "total_before_discount": "2640.00",
+      "discount_percent": "80.00",
+      "final_amount": "528.00",
+      "method": "Insurance",
+      "payment_date": "2025-01-14T16:30:00Z",
+      "notes": "Insurance covered 80%"
+    }
+  },
+  {
+    "model": "api.predictionrecord",
+    "pk": 2001,
+    "fields": {
+      "patient": 2001,
+      "predicted_by": 2002,
+      "risk_level": 1,
+      "prediction_date": "2025-01-10T14:30:00Z",
+      "notes": "High readmission risk due to cardiac history"
+    }
+  },
+  {
+    "model": "api.predictionrecord",
+    "pk": 2002,
+    "fields": {
+      "patient": 2002,
+      "predicted_by": 2002,
+      "risk_level": 0,
+      "prediction_date": "2025-01-20T10:30:00Z",
+      "notes": "Low risk, young patient with minor injury"
+    }
+  },
+  {
+    "model": "api.schedule",
+    "pk": 2001,
+    "fields": {
+      "user": 2002,
+      "date": "2025-02-22",
+      "shift": "morning",
+      "start_time": "08:00:00",
+      "end_time": "16:00:00",
+      "is_available": true,
+      "notes": "",
+      "created_at": "2025-01-15T10:00:00Z",
+      "updated_at": "2025-01-15T10:00:00Z",
+      "is_locked": false
+    }
+  },
+  {
+    "model": "api.schedule",
+    "pk": 2002,
+    "fields": {
+      "user": 2003,
+      "date": "2025-02-22",
+      "shift": "night",
+      "start_time": "20:00:00",
+      "end_time": "08:00:00",
+      "is_available": true,
+      "notes": "",
+      "created_at": "2025-01-15T10:00:00Z",
+      "updated_at": "2025-01-15T10:00:00Z",
+      "is_locked": false
+    }
+  },
+  {
+    "model": "api.shiftswap request",
+    "pk": 2001,
+    "fields": {
+      "requester": 2002,
+      "requester_shift": 2001,
+      "recipient": 2003,
+      "recipient_shift": 2002,
+      "reason": "Family emergency on morning of Feb 22",
+      "status": "pending",
+      "admin_notes": "",
+      "created_at": "2025-01-18T14:00:00Z",
+      "updated_at": "2025-01-18T14:00:00Z",
+      "reviewed_by": null,
+      "reviewed_at": null
+    }
+  },
+  {
+    "model": "api.unavailabilityrequest",
+    "pk": 2001,
+    "fields": {
+      "user": 2003,
+      "start_date": "2025-03-01",
+      "end_date": "2025-03-05",
+      "reason": "Annual leave - vacation",
+      "status": "approved",
+      "admin_notes": "Approved, coverage arranged",
+      "created_at": "2025-01-15T09:00:00Z",
+      "updated_at": "2025-01-16T10:00:00Z",
+      "reviewed_by": 2001,
+      "reviewed_at": "2025-01-16T10:00:00Z"
+    }
+  },
+  {
+    "model": "api.medicine",
+    "pk": 2001,
+    "fields": {
+      "name": "Test Aspirin 100mg",
+      "generic_name": "Acetylsalicylic Acid",
+      "category": "cardiovascular",
+      "dosage_form": "Tablet",
+      "strength": "100mg",
+      "price_per_unit": "0.50",
+      "stock_quantity": 500,
+      "reorder_level": 100,
+      "manufacturer": "PharmaCorp Ltd",
+      "description": "Blood thinner for cardiovascular protection",
+      "requires_prescription": false,
+      "is_active": true,
+      "created_at": "2025-01-01T08:00:00Z",
+      "updated_at": "2025-01-20T09:00:00Z"
+    }
+  },
+  {
+    "model": "api.medicine",
+    "pk": 2002,
+    "fields": {
+      "name": "Test Metformin 500mg",
+      "generic_name": "Metformin Hydrochloride",
+      "category": "diabetes",
+      "dosage_form": "Tablet",
+      "strength": "500mg",
+      "price_per_unit": "0.75",
+      "stock_quantity": 300,
+      "reorder_level": 50,
+      "manufacturer": "DiabetesCare Inc",
+      "description": "Type 2 diabetes medication",
+      "requires_prescription": true,
+      "is_active": true,
+      "created_at": "2025-01-01T08:00:00Z",
+      "updated_at": "2025-01-20T09:00:00Z"
+    }
+  },
+  {
+    "model": "api.prescription",
+    "pk": 2001,
+    "fields": {
+      "patient": 2001,
+      "doctor": 2001,
+      "admission": 2001,
+      "appointment": null,
+      "status": "dispensed",
+      "prescribed_date": "2025-01-11T10:00:00Z",
+      "dispensed_by": 2001,
+      "dispensed_date": "2025-01-11T14:00:00Z",
+      "notes": "Post-cardiac catheterization medication",
+      "is_paid": true,
+      "created_at": "2025-01-11T10:00:00Z",
+      "updated_at": "2025-01-11T14:00:00Z"
+    }
+  },
+  {
+    "model": "api.prescriptionitem",
+    "pk": 2001,
+    "fields": {
+      "prescription": 2001,
+      "medicine": 2001,
+      "quantity": 30,
+      "dosage_instructions": "Take 1 tablet daily in the morning with food",
+      "duration_days": 30,
+      "status": "dispensed",
+      "dispensed_date": "2025-01-11T14:00:00Z",
+      "notes": ""
+    }
+  },
+  {
+    "model": "api.prescriptionitem",
+    "pk": 2002,
+    "fields": {
+      "prescription": 2001,
+      "medicine": 2002,
+      "quantity": 60,
+      "dosage_instructions": "Take 1 tablet twice daily with meals",
+      "duration_days": 30,
+      "status": "dispensed",
+      "dispensed_date": "2025-01-11T14:00:00Z",
+      "notes": ""
+    }
+  }
+]
